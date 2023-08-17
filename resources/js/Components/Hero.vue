@@ -2,7 +2,8 @@
     <div class="relative h-screen isolate px-6 pt-14 lg:px-8">
         <img
             :src="hero"
-            alt=""
+            alt="image"
+            loading="lazy"
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
 
@@ -19,10 +20,10 @@
                         почувствуй себя победителем
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
-                        <a
-                            href="#"
+                        <Link
+                            href="/form"
                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >Участвовать</a
+                            >Участвовать</Link
                         >
                         <a
                             href="#"

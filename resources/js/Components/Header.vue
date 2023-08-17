@@ -37,14 +37,16 @@
                 >
             </div>
 
-            <div class="hidden lg:flex lg:flex-1 items-center lg:justify-end">
+            <div
+                class="hidden lg:flex lg:flex-1 items-center space-x-5 lg:justify-end"
+            >
                 <Link
                     href="/login"
                     class="text-sm font-bold uppercase leading-6 text-white"
-                    >Регистрация
+                    >Вход
                 </Link>
+                <SwitchLang />
             </div>
-            <SwitchLang />
         </nav>
         <Dialog
             as="div"
@@ -57,14 +59,15 @@
                 class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
             >
                 <div class="flex items-center justify-between">
-                    <a href="#" class="-m-1.5 p-1.5 bg-gray-700">
+                    <!-- <Link href="/" class="-m-1.5 p-1.5 bg-gray-700">
                         <span class="sr-only">Логотип</span>
                         <img
                             class="h-8 w-auto"
                             src="../../img/logo.png"
                             alt=""
                         />
-                    </a>
+                    </Link> -->
+
                     <button
                         type="button"
                         class="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -73,6 +76,7 @@
                         <span class="sr-only">Меню закрыть</span>
                         <XMarkIcon class="h-6 w-6" aria-hidden="true" />
                     </button>
+                    <SwitchLang />
                 </div>
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
@@ -111,6 +115,7 @@ const navigation = [
     { name: "Результаты", href: "/results" },
     { name: "Организаторы забега", href: "#" },
     { name: "Участникам", href: "#" },
+    { name: "О нас", href: "/about" },
 ];
 
 const mobileMenuOpen = ref(false);

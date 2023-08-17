@@ -1,9 +1,9 @@
 <script setup>
+import Attachs from "@/Components/Attachs.vue";
 import Banner from "@/Components/Banner.vue";
 import Hero from "@/Components/Hero.vue";
 import NewsLetter from "@/Components/NewsLetter.vue";
 import Partners from "@/Components/Partners.vue";
-
 import Stepper from "@/Components/Stepper.vue";
 </script>
 <template>
@@ -12,5 +12,6 @@ import Stepper from "@/Components/Stepper.vue";
     <Hero class="relative" />
     <NewsLetter />
     <Stepper />
+    <Attachs />
     <Partners />
 </template>

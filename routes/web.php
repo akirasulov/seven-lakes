@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\LanguageStoreController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResultController;
@@ -22,9 +23,15 @@ Route::get('/', function () {
     return Inertia::render('Index');
 });
 
-ROute::get('/results', [ResultController::class, 'index']);
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+
+Route::get('/results', [ResultController::class, 'index'])->name('index');
 
 Route::post('/language', LanguageStoreController::class)->name('language.store');
+
+Route::get('/form', [FormController::class, 'index'])->name('form.show');
 
 Route::get('/old', function () {
     return Inertia::render('Welcome', [
