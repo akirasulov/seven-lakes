@@ -37,14 +37,14 @@
                 >
             </div>
 
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <SwitchLang />
+            <div class="hidden lg:flex lg:flex-1 items-center lg:justify-end">
                 <Link
                     href="/login"
                     class="text-sm font-bold uppercase leading-6 text-white"
-                    >Регистрация <span aria-hidden="true">&rarr;</span></Link
-                >
+                    >Регистрация
+                </Link>
             </div>
+            <SwitchLang />
         </nav>
         <Dialog
             as="div"

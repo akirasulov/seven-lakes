@@ -3,6 +3,7 @@
 namespace App\Lang;
 
 enum Lang: string {
+    case EN = 'en';
 
     case RU = 'ru';
 
@@ -11,11 +12,11 @@ enum Lang: string {
     public function label(): string
     {
         return match ($this) {
-
-            self::TJ => 'Тоҷикӣ',
+            self::EN => 'English',
 
             self::RU => 'Русский',
 
+            self::TJ => 'Тоҷикӣ',
         };
     }
 }

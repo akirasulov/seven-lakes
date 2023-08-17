@@ -10,9 +10,7 @@
                         {{
                             $page.props.languages.find(
                                 (el) => el.value == $page.props.language
-                            ).value == "tj"
-                                ? "Тоҷикӣ"
-                                : "Русский"
+                            ).label
                         }}
                         <svg
                             class="ml-2 -mr-0.5 h-4 w-4"
@@ -51,6 +49,17 @@
                     as="button"
                 >
                     {{ $page.props.languages[1].label }}
+                </DropdownLink>
+                <DropdownLink
+                    :href="
+                        route('language.store', {
+                            language: `${$page.props.languages[1].value}`,
+                        })
+                    "
+                    method="post"
+                    as="button"
+                >
+                    {{ $page.props.languages[2].label }}
                 </DropdownLink>
             </template>
         </Dropdown>
