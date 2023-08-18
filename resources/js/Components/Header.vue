@@ -12,9 +12,8 @@
             aria-label="Global"
         >
             <div class="flex lg:flex-1">
-                <Link href="/" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Логотип</span>
-                    <img class="h-14 w-auto" src="../../img/logo.png" alt="" />
+                <Link href="/">
+                    <ApplicationLogo class="h-14 w-auto" />
                 </Link>
             </div>
             <div class="flex lg:hidden">
@@ -59,15 +58,6 @@
                 class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
             >
                 <div class="flex items-center justify-between">
-                    <!-- <Link href="/" class="-m-1.5 p-1.5 bg-gray-700">
-                        <span class="sr-only">Логотип</span>
-                        <img
-                            class="h-8 w-auto"
-                            src="../../img/logo.png"
-                            alt=""
-                        />
-                    </Link> -->
-
                     <button
                         type="button"
                         class="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -109,7 +99,7 @@ import NavLink from "@/Components/NavLink.vue";
 import SwitchLang from "@/Components/SwitchLang.vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
-
+import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 const navigation = [
     { name: "Дистанция", href: "#" },
     { name: "Результаты", href: "/results" },
