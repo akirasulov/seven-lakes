@@ -1,6 +1,6 @@
 <template>
     <Head title="Заявка" />
-    <div class="isolate bg-white px-6 py-24 lg:px-8">
+    <div class="isolate bg-white px-6 py-14 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
             <h2
                 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
@@ -11,121 +11,137 @@
                 Горный Полумарафон 7 Озёр
             </p>
         </div>
-        <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+
+        <form @submit.prevent="submit" class="mx-auto mt-10 max-w-xl">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
-                    <label
-                        for="first-name"
-                        class="block text-sm font-semibold leading-6 text-gray-900"
-                        >Имя *</label
-                    >
+                    <InputLabel for="first_name" value="Имя *" />
                     <div class="mt-2.5">
-                        <input
+                        <TextInput
+                            id="first_name"
                             type="text"
-                            name="first-name"
-                            id="first-name"
-                            autocomplete="given-name"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            v-model="form.first_name"
+                            required
+                            autocomplete="first_name"
+                            autofocus
+                        />
+                        <InputError
+                            class="mt-2"
+                            :message="form.errors.first_name"
                         />
                     </div>
                 </div>
                 <div>
-                    <label
-                        for="last-name"
-                        class="block text-sm font-semibold leading-6 text-gray-900"
-                        >Фамилия *</label
-                    >
+                    <InputLabel for="last-name" value="Фамилия *" />
                     <div class="mt-2.5">
-                        <input
+                        <TextInput
+                            id="last_name"
                             type="text"
-                            name="last-name"
-                            id="last-name"
-                            autocomplete="family-name"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            v-model="form.last_name"
+                            required
+                            autocomplete="last_name"
+                            autofocus
+                        />
+                        <InputError
+                            class="mt-2"
+                            :message="form.errors.last_name"
                         />
                     </div>
                 </div>
                 <div class="sm:col-span-2">
-                    <label
-                        for="company"
-                        class="block text-sm font-semibold leading-6 text-gray-900"
-                        >Экстренный контакт *</label
-                    >
+                    <InputLabel for="contact" value="Экстренный контакт *" />
                     <div class="mt-2.5">
-                        <input
+                        <TextInput
+                            id="contact"
                             type="text"
-                            name="company"
-                            id="company"
-                            autocomplete="organization"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            v-model="form.contact"
+                            required
+                            autocomplete="contact"
+                            autofocus
+                        />
+                        <InputError
+                            class="mt-2"
+                            :message="form.errors.contact"
                         />
                     </div>
                 </div>
                 <div class="sm:col-span-2">
-                    <label
-                        for="email"
-                        class="block text-sm font-semibold leading-6 text-gray-900"
-                        >E-mail *</label
-                    >
+                    <InputLabel for="email" value="E-mail *" />
                     <div class="mt-2.5">
-                        <input
-                            type="email"
-                            name="email"
+                        <TextInput
                             id="email"
+                            type="email"
+                            v-model="form.email"
+                            required
                             autocomplete="email"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            autofocus
                         />
+                        <InputError class="mt-2" :message="form.errors.email" />
                     </div>
                 </div>
                 <div class="sm:col-span-2">
-                    <label
-                        for="phone-number"
-                        class="block text-sm font-semibold leading-6 text-gray-900"
-                        >Пол*</label
-                    >
-
+                    <InputLabel for="sex" value="Пол *" />
                     <select
-                        id="countries"
+                        id="sex"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                        required
                     >
-                        <option selected>Выберите пол</option>
+                        <option value="">Выберите пол</option>
                         <option value="US">Женщина</option>
                         <option value="CA">Мужчина</option>
                     </select>
+                    <InputError class="mt-2" :message="form.errors.sex" />
                 </div>
                 <div class="sm:col-span-2">
-                    <label
-                        for="phone-number"
-                        class="block text-sm font-semibold leading-6 text-gray-900"
-                        >Номер телефона*</label
-                    >
+                    <InputLabel for="phone_number" value="Номер телефона *" />
                     <div class="relative mt-2.5">
-                        <input
+                        <TextInput
+                            id="phone_number"
                             type="tel"
-                            name="phone-number"
-                            id="phone-number"
-                            autocomplete="tel"
-                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            v-model="form.phone_number"
+                            required
+                            autocomplete="phone_number"
+                            autofocus
+                        />
+                        <InputError
+                            class="mt-2"
+                            :message="form.errors.phone_number"
                         />
                     </div>
                 </div>
             </div>
             <div class="mt-10">
-                <button
-                    type="submit"
-                    class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                <PrimaryButton
+                    :class="{ 'opacity-25': form.processing }"
+                    :disabled="form.processing"
                 >
                     Участвовать
-                </button>
+                </PrimaryButton>
             </div>
         </form>
     </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import InputError from "@/Components/InputError.vue";
+import InputLabel from "@/Components/InputLabel.vue";
+import PrimaryButton from "@/Components/PrimaryButton.vue";
+import TextInput from "@/Components/TextInput.vue";
+import { useForm } from "@inertiajs/vue3";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 import { Switch, SwitchGroup, SwitchLabel } from "@headlessui/vue";
+const form = useForm({
+    first_name: "",
+    last_name: "",
+    contact: "",
+    email: "",
+    phone_number: "",
+    sex: "",
+});
 
-const agreed = ref(false);
+const submit = () => {
+    form.post(route("password.confirm"), {
+        onFinish: () => form.reset(),
+    });
+};
 </script>

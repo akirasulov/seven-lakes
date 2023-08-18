@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col min-h-screen">
         <Header />
-
+        <Banner />
         <div>
             <transition
                 enter-active-class="ease-out duration-200"
@@ -25,4 +25,5 @@
 <script setup>
 import Header from "@/Components/Header.vue";
 import Footer from "@/Components/Footer.vue";
+import Banner from "@/Components/Banner.vue";
 </script>

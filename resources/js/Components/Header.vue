@@ -14,7 +14,7 @@
             <div class="flex lg:flex-1">
                 <Link href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Логотип</span>
-                    <img class="h-8 w-auto" src="../../img/logo.png" alt="" />
+                    <img class="h-14 w-auto" src="../../img/logo.png" alt="" />
                 </Link>
             </div>
             <div class="flex lg:hidden">

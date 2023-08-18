@@ -8,7 +8,7 @@
                 >
                     <img
                         src="../../img/logo.png"
-                        class="h-8 mr-3"
+                        class="h-14 mr-3"
                         alt="Flowbite Logo"
                     />
                 </a>

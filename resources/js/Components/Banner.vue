@@ -13,7 +13,7 @@
                         type="button"
                         class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
                     >
-                        <span class="sr-only">Dismiss</span>
+                        <span class="sr-only">Закрыть</span>
                         <XMarkIcon
                             class="h-5 w-5 text-black"
                             aria-hidden="true"
@@ -27,8 +27,10 @@
             </div>
 
             <div class="flex items-center mt-6 gap-x-4 shrink-0 lg:mt-0">
-                <a href="#" class="text-blue-500 text-sm hover:underline"
-                    >Подробнее</a
+                <Link
+                    href="/about"
+                    class="text-blue-500 text-sm hover:underline"
+                    >Подробнее</Link
                 >
 
                 <Link
@@ -46,7 +48,6 @@
 import { XMarkIcon } from "@heroicons/vue/20/solid";
 import { onMounted, ref } from "vue";
 import { useWindowScroll } from "@vueuse/core";
-
 const { y } = useWindowScroll();
 let show = ref(true);
 onMounted(() => {
