@@ -11,12 +11,12 @@ return [
     | that are given by the password broker for a password update attempt
     | has failed, such as for an invalid token or invalid new password.
     |
-    */
+     */
 
-    'reset' => 'Your password has been reset.',
-    'sent' => 'We have emailed your password reset link.',
-    'throttled' => 'Please wait before retrying.',
-    'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that email address.",
+    'reset' => 'Пароли шумо аз нав барқарор карда шуд.',
+    'sent' => 'Мо истиноди барқароркунии пароли шуморо бо почтаи электронӣ фиристодаем.',
+    'throttled' => 'Лутфан пеш аз кӯшиши дубора интизор шавед.',
+    'token' => 'Ин аломати барқароркунии парол беэътибор аст.',
+    'user' => "Мо корбареро бо ин суроғаи почтаи электронӣ пайдо карда наметавонем.",
 
 ];
