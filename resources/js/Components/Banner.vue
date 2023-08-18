@@ -1,7 +1,7 @@
 <template>
     <Transition duration="550" name="nested">
         <section
-            v-if="!show && y > 100"
+            v-if="!show && y > 100 && $page.component != 'Form'"
             class="fixed z-50 max-w-2xl p-4 mx-auto bg-white border border-gray-200 md:gap-x-4 left-12 bottom-16 md:flex md:items-center rounded-2xl"
         >
             <div class="flex items-center gap-x-4">

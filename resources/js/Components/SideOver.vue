@@ -1,10 +1,7 @@
 <template>
     <Transition duration="550" name="nested">
         <div
-            v-if="
-                ($page.component == 'Index' && y > 430) ||
-                $page.component != 'Index'
-            "
+            v-if="y > 430"
             class="fixed group z-10 flex justify-center items-center bottom-0 right-4 top-0"
         >
             <button
