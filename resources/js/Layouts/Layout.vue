@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col min-h-screen">
-        <Header />
+        <Header class="z-10" />
         <Banner />
         <div>
             <transition
@@ -18,6 +18,7 @@
             </transition>
         </div>
 
+        <SideOver class="z-50" />
         <Footer class="mt-auto" />
     </div>
 </template>
@@ -26,4 +27,5 @@
 import Header from "@/Components/Header.vue";
 import Footer from "@/Components/Footer.vue";
 import Banner from "@/Components/Banner.vue";
+import SideOver from "@/Components/SideOver.vue";
 </script>
