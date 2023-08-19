@@ -3,8 +3,8 @@
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\LanguageStoreController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\ResultController;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -31,16 +31,18 @@ Route::get('/results', [ResultController::class, 'index'])->name('index');
 
 Route::post('/language', LanguageStoreController::class)->name('language.store');
 
+Route::post('/form/strore', [RegistrationController::class, 'store'])->name('form.store');
+
 Route::get('/form', [FormController::class, 'index'])->name('form.show');
 
-Route::get('/old', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/old', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

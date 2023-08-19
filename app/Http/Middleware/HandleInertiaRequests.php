@@ -40,6 +40,14 @@ class HandleInertiaRequests extends Middleware
                 'user' => $request->user(),
             ],
 
+            'flash' => collect(Arr::only($request->session()->all(), ['success', 'error', 'warning']))
+                ->mapWithKeys(function ($notification, $key) {
+                    return [
+                        'type' => $key,
+                        'body' => $notification,
+                    ];
+                }),
+
             'language' => app()->getLocale(),
 
             'languages' => LanguageResource::collection(Lang::cases()),

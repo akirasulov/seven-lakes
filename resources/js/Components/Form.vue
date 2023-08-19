@@ -15,49 +15,31 @@
         <form @submit.prevent="submit" class="mx-auto mt-10 max-w-xl">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
-                    <InputLabel for="first_name" value="Имя *" />
+                    <InputLabel for="name" value="Имя *" />
                     <div class="mt-2.5">
                         <TextInput
-                            id="first_name"
+                            id="name"
                             type="text"
-                            v-model="form.first_name"
+                            v-model="form.name"
                             required
-                            autocomplete="first_name"
+                            autocomplete="name"
                             autofocus
                         />
-                        <InputError
-                            class="mt-2"
-                            :message="form.errors.first_name"
-                        />
+                        <InputError class="mt-2" :message="form.errors.name" />
                     </div>
                 </div>
                 <div>
-                    <InputLabel for="last-name" value="Фамилия *" />
+                    <InputLabel for="last-surname" value="Фамилия *" />
                     <div class="mt-2.5">
                         <TextInput
-                            id="last_name"
+                            id="surname"
                             type="text"
-                            v-model="form.last_name"
+                            v-model="form.surname"
                             required
                         />
                         <InputError
                             class="mt-2"
-                            :message="form.errors.last_name"
-                        />
-                    </div>
-                </div>
-                <div class="sm:col-span-2">
-                    <InputLabel for="contact" value="Экстренный контакт *" />
-                    <div class="mt-2.5">
-                        <TextInput
-                            id="contact"
-                            type="text"
-                            v-model="form.contact"
-                            required
-                        />
-                        <InputError
-                            class="mt-2"
-                            :message="form.errors.contact"
+                            :message="form.errors.surname"
                         />
                     </div>
                 </div>
@@ -74,30 +56,49 @@
                     </div>
                 </div>
                 <div class="sm:col-span-2">
+                    <InputLabel for="msisdn" value="Номер телефона *" />
+                    <div class="relative mt-2.5">
+                        <TextInput
+                            id="msisdn"
+                            type="tel"
+                            v-model="form.msisdn"
+                            required
+                        />
+                        <InputError
+                            class="mt-2"
+                            :message="form.errors.msisdn"
+                        />
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
                     <InputLabel for="sex" value="Пол *" />
                     <select
+                        v-model="form.sex"
                         id="sex"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
                         required
                     >
                         <option value="">Выберите пол</option>
-                        <option value="US">Женщина</option>
-                        <option value="CA">Мужчина</option>
+                        <option value="female">Женщина</option>
+                        <option value="male">Мужчина</option>
                     </select>
                     <InputError class="mt-2" :message="form.errors.sex" />
                 </div>
                 <div class="sm:col-span-2">
-                    <InputLabel for="phone_number" value="Номер телефона *" />
-                    <div class="relative mt-2.5">
+                    <InputLabel
+                        for="emergency_contact"
+                        value="Экстренный контакт *"
+                    />
+                    <div class="mt-2.5">
                         <TextInput
-                            id="phone_number"
-                            type="tel"
-                            v-model="form.phone_number"
+                            id="emergency_contact"
+                            type="text"
+                            v-model="form.emergency_contact"
                             required
                         />
                         <InputError
                             class="mt-2"
-                            :message="form.errors.phone_number"
+                            :message="form.errors.emergency_contact"
                         />
                     </div>
                 </div>
@@ -122,18 +123,24 @@ import TextInput from "@/Components/TextInput.vue";
 import { useForm } from "@inertiajs/vue3";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 import { Switch, SwitchGroup, SwitchLabel } from "@headlessui/vue";
+import { useToast } from "vue-toastification";
 const form = useForm({
-    first_name: "",
-    last_name: "",
-    contact: "",
+    name: "",
+    surname: "",
     email: "",
-    phone_number: "",
+    msisdn: "",
     sex: "",
+    emergency_contact: "",
 });
 
 const submit = () => {
-    form.post(route("password.confirm"), {
-        onFinish: () => form.reset(),
+    form.post(route("form.store"), {
+        onSuccess: () => {
+            form.reset();
+            setTimeout(() => {
+                window.location.href = "/";
+            }, 5000);
+        },
     });
 };
 </script>
