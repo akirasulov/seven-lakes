@@ -19,7 +19,7 @@
                     class="max-w-xl lg:max-w-lg"
                 >
                     <h2
-                        class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                        class="text-3xl font-bold tracking-tight text-center md:text-left text-white sm:text-4xl"
                     >
                         Горный Полумарафон 7 Озёр.
                     </h2>

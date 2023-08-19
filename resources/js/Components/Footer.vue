@@ -1,12 +1,36 @@
 <script setup>
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import { ref } from "vue";
+
+const links = ref([
+    {
+        name: "Дистанция",
+        link: "",
+    },
+    {
+        name: "Организаторы забега",
+        link: "",
+    },
+    {
+        name: "Результаты",
+        link: "",
+    },
+    {
+        name: "Участникам",
+        link: "",
+    },
+    {
+        name: "О нас",
+        link: "/about",
+    },
+]);
 </script>
 
 <template>
     <footer class="bg-gray-900 shadow">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
-                <div>
+                <div class="mb-4">
                     <Link href="/">
                         <ApplicationLogo class="h-14 mr-3" />
                     </Link>
@@ -15,23 +39,12 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
                 <ul
                     class="flex flex-wrap items-center mb-6 text-sm font-medium text-whitesm:mb-0 text-white"
                 >
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6"
-                            >Дистанция</a
+                    <li v-for="(item, index) in links" :key="index">
+                        <Link
+                            :href="item.link"
+                            class="mr-4 hover:underline md:mr-6"
+                            >{{ item.name }}</Link
                         >
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6"
-                            >Организаторы забега</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6"
-                            >Результаты</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Участникам</a>
                     </li>
                 </ul>
             </div>
