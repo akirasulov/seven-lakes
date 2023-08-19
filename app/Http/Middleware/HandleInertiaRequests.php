@@ -45,7 +45,6 @@ class HandleInertiaRequests extends Middleware
             'languages' => LanguageResource::collection(Lang::cases()),
 
             'translations' => function () {
-
                 return cache()->rememberForever('translations.' . app()->getLocale(), function () {
                     return collect(File::allFiles(base_path('lang/' . app()->getLocale())))
                         ->flatMap(function ($file) {

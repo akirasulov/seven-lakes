@@ -7,6 +7,7 @@ import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy/dist/vue.m";
 import { MotionPlugin } from "@vueuse/motion";
 import Layout from "./Layouts/Layout.vue";
+import __ from "./lang";
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
 createInertiaApp({
@@ -25,13 +26,14 @@ createInertiaApp({
             return page;
         }),
     setup({ el, App, props, plugin }) {
-        return createApp({ render: () => h(App, props) })
+        const app = createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue, Ziggy)
             .use(MotionPlugin)
             .component("Link", Link)
-            .component("Head", Head)
-            .mount(el);
+            .component("Head", Head);
+        app.config.globalProperties.__ = __;
+        app.mount(el);
     },
     progress: {
         color: "#4B5563",

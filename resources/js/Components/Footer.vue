@@ -13,7 +13,7 @@ const links = ref([
     },
     {
         name: "Результаты",
-        link: "",
+        link: "/results",
     },
     {
         name: "Участникам",

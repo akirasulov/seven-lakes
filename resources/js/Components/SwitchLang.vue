@@ -53,7 +53,7 @@
                 <DropdownLink
                     :href="
                         route('language.store', {
-                            language: `${$page.props.languages[1].value}`,
+                            language: `${$page.props.languages[2].value}`,
                         })
                     "
                     method="post"

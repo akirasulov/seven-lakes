@@ -1,14 +1,22 @@
+<script>
+export default {
+    layout: null,
+};
+</script>
+
 <script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
+import { Head } from "@inertiajs/vue3";
 </script>
 
 <template>
-    <Head title="Dashboard" />
+    <Head title="Панель управления" />
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                Панель управления
+            </h2>
         </template>
 
         <div class="py-12">
