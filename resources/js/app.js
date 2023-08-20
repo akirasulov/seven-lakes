@@ -11,7 +11,7 @@ import __ from "./lang";
 import { notifications } from "./Plugins/notifications";
 import Toast from "vue-toastification";
 
-const appName = import.meta.env.VITE_APP_NAME || "Laravel";
+const appName = import.meta.env.VITE_APP_NAME || "Seven Lakes";
 
 createInertiaApp({
     title: (title) => `${title}`,

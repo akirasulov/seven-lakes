@@ -28,11 +28,34 @@
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
                 <Link
-                    v-for="item in navigation"
-                    :key="item.name"
-                    :href="item.href"
+                    href=""
                     class="text-sm leading-6 text-white uppercase font-bold"
-                    >{{ item.name }}</Link
+                >
+                    {{ __("header.distance") }}</Link
+                >
+                <Link
+                    href="/results"
+                    class="text-sm leading-6 text-white uppercase font-bold"
+                >
+                    {{ __("header.results") }}</Link
+                >
+                <Link
+                    href=""
+                    class="text-sm leading-6 text-white uppercase font-bold"
+                >
+                    {{ __("header.race_organizers") }}</Link
+                >
+                <Link
+                    href=""
+                    class="text-sm leading-6 text-white uppercase font-bold"
+                >
+                    {{ __("header.participants") }}</Link
+                >
+                <Link
+                    href="/about"
+                    class="text-sm leading-6 text-white uppercase font-bold"
+                >
+                    {{ __("header.about") }}</Link
                 >
             </div>
 
@@ -42,7 +65,8 @@
                 <Link
                     href="/login"
                     class="text-sm font-bold uppercase leading-6 text-white"
-                    >Вход
+                >
+                    {{ __("header.registration") }}
                 </Link>
                 <SwitchLang />
             </div>
@@ -71,19 +95,43 @@
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                            <a
-                                v-for="item in navigation"
-                                :key="item.name"
-                                :href="item.href"
+                            <Link
+                                href=""
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >{{ item.name }}</a
+                            >
+                                {{ __("header.distance") }}</Link
+                            >
+                            <Link
+                                href="/results"
+                                class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            >
+                                {{ __("header.results") }}</Link
+                            >
+                            <Link
+                                href=""
+                                class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            >
+                                {{ __("header.race_organizers") }}</Link
+                            >
+                            <Link
+                                href=""
+                                class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            >
+                                {{ __("header.participants") }}</Link
+                            >
+                            <Link
+                                href="/about"
+                                class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            >
+                                {{ __("header.about") }}</Link
                             >
                         </div>
                         <div class="py-6">
-                            <a
+                            <Link
                                 href="/login"
                                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >Регистрация</a
+                            >
+                                {{ __("header.registration") }}</Link
                             >
                         </div>
                     </div>
@@ -100,13 +148,6 @@ import SwitchLang from "@/Components/SwitchLang.vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-const navigation = [
-    { name: "Дистанция", href: "#" },
-    { name: "Результаты", href: "/results" },
-    { name: "Организаторы забега", href: "#" },
-    { name: "Участникам", href: "#" },
-    { name: "О нас", href: "/about" },
-];
 
 const mobileMenuOpen = ref(false);
 </script>
