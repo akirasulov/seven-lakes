@@ -28,7 +28,7 @@
                     </p>
                 </div>
                 <dl
-                    v-motion-slide-visible-bottom
+                    v-motion-slide-visible-once-bottom
                     class="grid grid-cols-2 grid-rows-1 gap-x-8 gap-y-10 sm:grid-rows-2 lg:pt-2"
                 >
                     <div class="flex flex-col items-start">
