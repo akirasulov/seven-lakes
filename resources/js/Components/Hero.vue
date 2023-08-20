@@ -16,19 +16,21 @@
                         <Countdown />
                     </h1>
                     <p class="mt-6 text-lg leading-8 text-white">
-                        Участвуй в самом значимом спортивном событии города и
-                        почувствуй себя победителем
+                        {{ __("hero.description") }}
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <Link
                             href="/form"
                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >Участвовать</Link
+                        >
+                            {{ __("hero.participate") }}</Link
                         >
                         <Link
                             href="/about"
                             class="text-sm font-semibold leading-6 text-white"
-                            >Подробнее <span aria-hidden="true">→</span></Link
+                        >
+                            {{ __("hero.about") }}
+                            <span aria-hidden="true">→</span></Link
                         >
                     </div>
                 </div>
