@@ -8,4 +8,5 @@ return [
     'third' => 'Trace Certificate',
     'fourth' => 'Health receipt',
     'download' => 'Download',
+    'partners_header' => 'Trusted by the most innovative teams',
 ];

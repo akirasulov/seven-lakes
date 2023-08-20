@@ -7,4 +7,5 @@ return [
     'race_organizers' => 'Race organizers',
     'participants' => 'Participants',
     'about' => 'About',
+    'description' => 'Seven Lakes Mountain Half Marathon',
 ];

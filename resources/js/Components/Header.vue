@@ -31,31 +31,31 @@
                     href=""
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
-                    {{ __("header.distance") }}</Link
+                    {{ __("header_x_footer.distance") }}</Link
                 >
                 <Link
                     href="/results"
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
-                    {{ __("header.results") }}</Link
+                    {{ __("header_x_footer.results") }}</Link
                 >
                 <Link
                     href=""
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
-                    {{ __("header.race_organizers") }}</Link
+                    {{ __("header_x_footer.race_organizers") }}</Link
                 >
                 <Link
                     href=""
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
-                    {{ __("header.participants") }}</Link
+                    {{ __("header_x_footer.participants") }}</Link
                 >
                 <Link
                     href="/about"
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
-                    {{ __("header.about") }}</Link
+                    {{ __("header_x_footer.about") }}</Link
                 >
             </div>
 
@@ -66,7 +66,7 @@
                     href="/login"
                     class="text-sm font-bold uppercase leading-6 text-white"
                 >
-                    {{ __("header.registration") }}
+                    {{ __("header_x_footer.registration") }}
                 </Link>
                 <SwitchLang />
             </div>
@@ -99,31 +99,33 @@
                                 href=""
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
-                                {{ __("header.distance") }}</Link
+                                {{ __("header_x_footer.distance") }}</Link
                             >
                             <Link
                                 href="/results"
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
-                                {{ __("header.results") }}</Link
+                                {{ __("header_x_footer.results") }}</Link
                             >
                             <Link
                                 href=""
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
-                                {{ __("header.race_organizers") }}</Link
+                                {{
+                                    __("header_x_footer.race_organizers")
+                                }}</Link
                             >
                             <Link
                                 href=""
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
-                                {{ __("header.participants") }}</Link
+                                {{ __("header_x_footer.participants") }}</Link
                             >
                             <Link
                                 href="/about"
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
-                                {{ __("header.about") }}</Link
+                                {{ __("header_x_footer.about") }}</Link
                             >
                         </div>
                         <div class="py-6">
@@ -131,7 +133,7 @@
                                 href="/login"
                                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
-                                {{ __("header.registration") }}</Link
+                                {{ __("header_x_footer.registration") }}</Link
                             >
                         </div>
                     </div>

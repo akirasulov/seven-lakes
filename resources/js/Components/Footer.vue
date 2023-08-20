@@ -1,29 +1,5 @@
 <script setup>
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import { ref } from "vue";
-
-const links = ref([
-    {
-        name: "Дистанция",
-        link: "",
-    },
-    {
-        name: "Организаторы забега",
-        link: "",
-    },
-    {
-        name: "Результаты",
-        link: "/results",
-    },
-    {
-        name: "Участникам",
-        link: "",
-    },
-    {
-        name: "О нас",
-        link: "/about",
-    },
-]);
 </script>
 
 <template>
@@ -39,22 +15,37 @@ const links = ref([
                 <ul
                     class="flex flex-wrap items-center mb-6 text-sm font-medium text-whitesm:mb-0 text-white"
                 >
-                    <li v-for="(item, index) in links" :key="index">
-                        <Link
-                            :href="item.link"
-                            class="mr-4 hover:underline md:mr-6"
-                            >{{ item.name }}</Link
+                    <li>
+                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                            {{ __("header_x_footer.distance") }}</Link
+                        >
+                    </li>
+                    <li>
+                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                            {{ __("header_x_footer.results") }}</Link
+                        >
+                    </li>
+                    <li>
+                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                            {{ __("header_x_footer.race_organizers") }}</Link
+                        >
+                    </li>
+                    <li>
+                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                            {{ __("header_x_footer.participants") }}</Link
+                        >
+                    </li>
+                    <li>
+                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                            {{ __("header_x_footer.about") }}</Link
                         >
                     </li>
                 </ul>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
             <span class="block text-sm text-white sm:text-center"
-                >© 2023
-                <a href="https://flowbite.com/" class="hover:underline">
-                    Марафон 7 Озёр</a
-                ></span
-            >
+                >© 2023 {{ __("header_x_footer.description") }}
+            </span>
         </div>
     </footer>
 </template>
