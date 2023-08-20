@@ -5,17 +5,17 @@
             <h2
                 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             >
-                Регистрация
+                {{ __("form.registration") }}
             </h2>
             <p class="mt-2 text-lg leading-8 text-gray-600">
-                Горный Полумарафон 7 Озёр
+                {{ __("header_x_footer.description") }}
             </p>
         </div>
 
         <form @submit.prevent="submit" class="mx-auto mt-10 max-w-xl">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div>
-                    <InputLabel for="name" value="Имя *" />
+                    <InputLabel for="name" :value="__('form.name')" />
                     <div class="mt-2.5">
                         <TextInput
                             id="name"
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div>
-                    <InputLabel for="last-surname" value="Фамилия *" />
+                    <InputLabel for="surname" :value="__('form.surname')" />
                     <div class="mt-2.5">
                         <TextInput
                             id="surname"
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="sm:col-span-2">
-                    <InputLabel for="email" value="E-mail *" />
+                    <InputLabel for="email" :value="__('form.email')" />
                     <div class="mt-2.5">
                         <TextInput
                             id="email"
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="sm:col-span-2">
-                    <InputLabel for="msisdn" value="Номер телефона *" />
+                    <InputLabel for="msisdn" :value="__('form.msisdn')" />
                     <div class="relative mt-2.5">
                         <TextInput
                             id="msisdn"
@@ -71,24 +71,29 @@
                     </div>
                 </div>
                 <div class="sm:col-span-2">
-                    <InputLabel for="sex" value="Пол *" />
+                    <InputLabel for="sex" :value="__('form.sex')" />
                     <select
                         v-model="form.sex"
                         id="sex"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
                         required
                     >
-                        <option value="">Выберите пол</option>
-                        <option value="female">Женщина</option>
-                        <option value="male">Мужчина</option>
+                        <option value="">{{ __("form.sex_choose") }}</option>
+                        <option value="male">
+                            {{ __("form.sex_male") }}
+                        </option>
+                        <option value="female">
+                            {{ __("form.sex_female") }}
+                        </option>
                     </select>
                     <InputError class="mt-2" :message="form.errors.sex" />
                 </div>
                 <div class="sm:col-span-2">
                     <InputLabel
                         for="emergency_contact"
-                        value="Экстренный контакт *"
+                        :value="__('form.emergency_contact')"
                     />
+
                     <div class="mt-2.5">
                         <TextInput
                             id="emergency_contact"
@@ -108,7 +113,7 @@
                     :class="{ 'opacity-25': form.processing }"
                     :disabled="form.processing"
                 >
-                    Участвовать
+                    {{ __("banner.participate") }}
                 </PrimaryButton>
             </div>
         </form>

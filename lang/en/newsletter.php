@@ -9,4 +9,6 @@ return [
     'day' => 'September 03, 2023',
     'day_time' => 'Time',
     'time' => '10:00',
+    'distance' => 'Distance',
+    'distance_in' => '21 km',
 ];

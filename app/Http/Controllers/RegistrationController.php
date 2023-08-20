@@ -14,8 +14,8 @@ class RegistrationController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'surname' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:' . Registration::class,
-            'msisdn' => 'required|max:20|min:9|unique:' . Registration::class,
+            'email' => 'required|string|email|max:255|unique:',
+            'msisdn' => 'required|max:20|min:9|unique:',
             'sex' => 'required|string',
             'emergency_contact' => 'required|max:20|min:9',
         ]);

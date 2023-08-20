@@ -82,7 +82,9 @@
                                     <div class="px-4 sm:px-6">
                                         <DialogTitle
                                             class="text-base font-semibold leading-6 text-gray-900"
-                                            >Заявка на участие</DialogTitle
+                                            >{{
+                                                __("form.sideover_header")
+                                            }}</DialogTitle
                                         >
                                     </div>
                                     <div class="relative flex-1 px-4 sm:px-6">

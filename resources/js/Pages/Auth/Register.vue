@@ -32,7 +32,7 @@ const submit = () => {
 
         <form @submit.prevent="submit">
             <div>
-                <InputLabel for="name" value="Имя" />
+                <InputLabel for="name" :value="__('form.name')" />
 
                 <TextInput
                     id="name"
@@ -48,7 +48,7 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <InputLabel for="email" value="Email" />
+                <InputLabel for="email" :value="__('form.email')" />
 
                 <TextInput
                     id="email"
@@ -63,8 +63,7 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <InputLabel for="password" value="Пароль" />
-
+                <InputLabel for="password" :value="__('form.password')" />
                 <TextInput
                     id="password"
                     type="password"
@@ -80,7 +79,7 @@ const submit = () => {
             <div class="mt-4">
                 <InputLabel
                     for="password_confirmation"
-                    value="Подтвердите пароль"
+                    :value="__('form.confirm_password')"
                 />
 
                 <TextInput
@@ -103,7 +102,7 @@ const submit = () => {
                     :href="route('login')"
                     class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                    Уже зарегестрированы?
+                    {{ __("form.has_account") }}
                 </Link>
 
                 <PrimaryButton
@@ -111,7 +110,7 @@ const submit = () => {
                     :class="{ 'opacity-25': form.processing }"
                     :disabled="form.processing"
                 >
-                    Регистрация
+                    {{ __("form.registration") }}
                 </PrimaryButton>
             </div>
         </form>
