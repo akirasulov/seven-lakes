@@ -21,12 +21,10 @@
                     <h2
                         class="text-3xl font-bold tracking-tight text-center md:text-left text-white sm:text-4xl"
                     >
-                        Горный Полумарафон 7 Озёр.
+                        {{ __("newsletter.header") }}
                     </h2>
                     <p class="mt-4 text-lg leading-8 text-gray-300">
-                        Регистрация участников завершится 02 сентября 2023 в 17
-                        часов 59 минут или по достижению лимита выделенных
-                        слотов для регистрации на отдельные дистанции.
+                        {{ __("newsletter.description") }}
                     </p>
                 </div>
                 <dl
@@ -42,9 +40,11 @@
                                 aria-hidden="true"
                             />
                         </div>
-                        <dt class="mt-4 font-semibold text-white">Локация</dt>
+                        <dt class="mt-4 font-semibold text-white">
+                            {{ __("newsletter.location") }}
+                        </dt>
                         <dd class="mt-2 leading-7 text-gray-400">
-                            г. Пянджакент
+                            {{ __("newsletter.city") }}
                         </dd>
                     </div>
                     <div class="flex flex-col items-start">
@@ -56,9 +56,11 @@
                                 aria-hidden="true"
                             />
                         </div>
-                        <dt class="mt-4 font-semibold text-white">Дата</dt>
+                        <dt class="mt-4 font-semibold text-white">
+                            {{ __("newsletter.date") }}
+                        </dt>
                         <dd class="mt-2 leading-7 text-gray-400">
-                            03 сенятбря 2023
+                            {{ __("newsletter.day") }}
                         </dd>
                     </div>
                     <div class="flex flex-col items-start">
@@ -70,8 +72,12 @@
                                 aria-hidden="true"
                             />
                         </div>
-                        <dt class="mt-4 font-semibold text-white">Время</dt>
-                        <dd class="mt-2 leading-7 text-gray-400">10:00</dd>
+                        <dt class="mt-4 font-semibold text-white">
+                            {{ __("newsletter.day_time") }}
+                        </dt>
+                        <dd class="mt-2 leading-7 text-gray-400">
+                            {{ __("newsletter.time") }}
+                        </dd>
                     </div>
                 </dl>
             </div>
