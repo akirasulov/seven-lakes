@@ -22,7 +22,7 @@
                 </span>
 
                 <p class="text-sm text-gray-600">
-                    Горный Полумарафон 7 Озёр, присоединяйтесь к нам.
+                    {{ __("banner.description") }}
                 </p>
             </div>
 
@@ -30,14 +30,14 @@
                 <Link
                     href="/about"
                     class="text-blue-500 text-sm hover:underline"
-                    >Подробнее</Link
+                    >{{ __("banner.about") }}</Link
                 >
 
                 <Link
                     href="/form"
                     class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
                 >
-                    Участвовать
+                    {{ __("banner.participate") }}
                 </Link>
             </div>
         </section>
