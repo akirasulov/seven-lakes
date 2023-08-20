@@ -1,7 +1,11 @@
 <template>
     <div>
-        <p>Старт через:</p>
-        <p>{{ days }} дней, {{ hours }}:{{ minutes }}:{{ seconds }}</p>
+        <p>{{ __("countdown.start") }}:</p>
+        <p>
+            {{ days }} {{ __("countdown.days") }}, {{ hours }}:{{ minutes }}:{{
+                seconds
+            }}
+        </p>
     </div>
 </template>
 <script setup>
