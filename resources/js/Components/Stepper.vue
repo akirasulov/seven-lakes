@@ -11,11 +11,11 @@
                     class="p-10 flex flex-col items-center justify-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer"
                 >
                     <p class="text-2xl font-medium text-slate-700 mt-3">
-                        <span class="text-green-600 text-3xl">7</span> Главных
-                        Целей
+                        <span class="text-green-600 text-3xl">7</span>
+                        {{ __("steps.header") }}
                     </p>
                     <p class="mt-2 text-lg font-base text-slate-700">
-                        Пянджакентского Горного Полумарафона
+                        {{ __("steps.description") }}
                     </p>
                 </div>
 
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <p class="text-lg text-slate-700 mt-3">
-                        Популиризация бега
+                        {{ __("steps.first") }}
                     </p>
                 </div>
 
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <p class="text-lg text-slate-700 mt-3">
-                        Развитие массового спорта
+                        {{ __("steps.second") }}
                     </p>
                 </div>
 
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <p class="text-lg text-slate-700 mt-3">
-                        Развитие спортивного туризма
+                        {{ __("steps.third") }}
                     </p>
                 </div>
 
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <p class="text-lg text-slate-700 mt-3">
-                        Поддержка талантливых спортсменов
+                        {{ __("steps.fourth") }}
                     </p>
                 </div>
 
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                     <p class="text-lg text-slate-700 mt-3">
-                        Объединение жителей города
+                        {{ __("steps.fiveth") }}
                     </p>
                 </div>
 
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                     <p class="text-lg text-slate-700 mt-3">
-                        Подготовка бегунов к международным стартам
+                        {{ __("steps.sixth") }}
                     </p>
                 </div>
 
@@ -170,7 +170,7 @@
                     </div>
 
                     <p class="text-lg text-slate-700 mt-3">
-                        Формирование ценности здорового образа жизни
+                        {{ __("steps.seventh") }}
                     </p>
                 </div>
             </div>
