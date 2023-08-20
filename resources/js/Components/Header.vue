@@ -28,7 +28,8 @@
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
                 <Link
-                    href=""
+                    href="#"
+                    @click="scrole('distance')"
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
                     {{ __("header_x_footer.distance") }}</Link
@@ -40,7 +41,8 @@
                     {{ __("header_x_footer.results") }}</Link
                 >
                 <Link
-                    href=""
+                    href="#"
+                    @click="scrole('partners')"
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
                     {{ __("header_x_footer.race_organizers") }}</Link
@@ -96,19 +98,22 @@
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
                             <Link
-                                href=""
+                                href="#"
+                                @click="scrole('distance')"
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 {{ __("header_x_footer.distance") }}</Link
                             >
                             <Link
+                                @click="mobileMenuOpen = false"
                                 href="/results"
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 {{ __("header_x_footer.results") }}</Link
                             >
                             <Link
-                                href=""
+                                href="#"
+                                @click="scrole('partners')"
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 {{
@@ -122,6 +127,7 @@
                                 {{ __("header_x_footer.participants") }}</Link
                             >
                             <Link
+                                @click="mobileMenuOpen = false"
                                 href="/about"
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
@@ -150,6 +156,19 @@ import SwitchLang from "@/Components/SwitchLang.vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import { router } from "@inertiajs/vue3";
 
 const mobileMenuOpen = ref(false);
+function scrole(href) {
+    mobileMenuOpen.value = false;
+    router.visit("/", {
+        method: "get",
+        onFinish: () => {
+            setTimeout(() => {
+                let element = document.getElementById(href);
+                element.scrollIntoView({ behavior: "smooth" });
+            }, 100);
+        },
+    });
+}
 </script>

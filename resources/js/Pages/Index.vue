@@ -8,8 +8,8 @@ import Stepper from "@/Components/Stepper.vue";
 <template>
     <Head title="Главная" />
     <Hero class="relative" />
-    <NewsLetter />
+    <NewsLetter id="distance" />
     <Stepper />
     <Attachs />
-    <Partners />
+    <Partners id="partners" />
 </template>
