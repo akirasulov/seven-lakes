@@ -40,13 +40,13 @@
                 >
                     {{ __("header_x_footer.results") }}</Link
                 >
-                <Link
+                <!-- <Link
                     href="#"
                     @click="scrole('partners')"
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
                     {{ __("header_x_footer.race_organizers") }}</Link
-                >
+                > -->
                 <Link
                     href=""
                     class="text-sm leading-6 text-white uppercase font-bold"
@@ -70,6 +70,12 @@
                 >
                     {{ __("header_x_footer.registration") }}
                 </Link>
+                <!-- <Link
+                            href="/form"
+                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        >
+                            {{ __("hero.participate") }}</Link
+                        > -->
                 <SwitchLang />
             </div>
         </nav>
@@ -111,7 +117,7 @@
                             >
                                 {{ __("header_x_footer.results") }}</Link
                             >
-                            <Link
+                            <!-- <Link
                                 href="#"
                                 @click="scrole('partners')"
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -119,7 +125,7 @@
                                 {{
                                     __("header_x_footer.race_organizers")
                                 }}</Link
-                            >
+                            > -->
                             <Link
                                 href=""
                                 class="-mx-3 block uppercase rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"

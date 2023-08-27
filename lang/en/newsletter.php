@@ -8,7 +8,7 @@ return [
     'date' => 'Date',
     'day' => 'September 03, 2023',
     'day_time' => 'Time',
-    'time' => '10:00',
+    'time' => '09:00',
     'distance' => 'Distance',
-    'distance_in' => '21 km',
+    'distance_in' => '21,0975 km ',
 ];

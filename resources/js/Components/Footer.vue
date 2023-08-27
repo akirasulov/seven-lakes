@@ -25,11 +25,11 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
                             {{ __("header_x_footer.results") }}</Link
                         >
                     </li>
-                    <li>
+                    <!-- <li>
                         <Link href="" class="mr-4 hover:underline md:mr-6">
                             {{ __("header_x_footer.race_organizers") }}</Link
                         >
-                    </li>
+                    </li> -->
                     <li>
                         <Link href="" class="mr-4 hover:underline md:mr-6">
                             {{ __("header_x_footer.participants") }}</Link

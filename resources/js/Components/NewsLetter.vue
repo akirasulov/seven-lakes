@@ -120,12 +120,19 @@
                 </dl>
             </div>
         </div>
-        <div class="flex justify-center px-4 mt-24">
+        <div
+            class="flex flex-col justify-center items-center space-y-6 px-4 mt-24"
+        >
             <iframe
                 class="md:w-1/2 w-full h-80 rounded-md"
                 src="https://www.youtube.com/embed/7PQRNutqdTo?controls=0"
             >
             </iframe>
+            <img
+                class="bg-containt md:w-[60%] h-90 rounded-md"
+                src="../../img//route.png"
+                alt=""
+            />
         </div>
         <div
             class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
