@@ -65,12 +65,18 @@
             <div
                 class="hidden lg:flex lg:flex-1 items-center space-x-5 lg:justify-end"
             >
-                <Link
+                <!-- <Link
                     href="/login"
                     class="text-sm font-bold uppercase leading-6 text-white"
                 >
                     {{ __("header_x_footer.registration") }}
-                </Link>
+                </Link> -->
+                <Link
+                    href="/form"
+                    class="rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                    {{ __("hero.participate") }}</Link
+                >
                 <!-- <Link
                             href="/form"
                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
