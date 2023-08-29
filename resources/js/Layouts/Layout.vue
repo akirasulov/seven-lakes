@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col min-h-screen">
         <Header class="z-10" />
-        <Banner />
+        <!-- <Banner /> -->
         <div>
             <transition
                 enter-active-class="ease-out duration-200"
