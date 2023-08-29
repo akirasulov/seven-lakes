@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardIndexController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\LanguageStoreController;
 use App\Http\Controllers\ProfileController;
@@ -44,9 +45,7 @@ Route::get('/form', [FormController::class, 'index'])->name('form.show');
 //     ]);
 // });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', DashboardIndexController::class)->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

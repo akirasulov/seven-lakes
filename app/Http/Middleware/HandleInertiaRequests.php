@@ -38,6 +38,7 @@ class HandleInertiaRequests extends Middleware
 
             'auth' => [
                 'user' => $request->user(),
+                'admin' => $request->user()->email == 'akirasulov2323@gmail.com' ? true : false,
             ],
 
             'flash' => collect(Arr::only($request->session()->all(), ['success', 'error', 'warning']))
