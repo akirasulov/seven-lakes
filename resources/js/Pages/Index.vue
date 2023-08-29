@@ -10,6 +10,6 @@ import Stepper from "@/Components/Stepper.vue";
     <Hero class="relative" />
     <NewsLetter id="distance" />
     <Stepper />
-    <Attachs />
+    <Attachs id="participants" />
     <Partners id="partners" />
 </template>

@@ -1,5 +1,18 @@
 <script setup>
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import { router } from "@inertiajs/vue3";
+
+function scrole(href) {
+    router.visit("/", {
+        method: "get",
+        onFinish: () => {
+            setTimeout(() => {
+                let element = document.getElementById(href);
+                element.scrollIntoView({ behavior: "smooth" });
+            }, 100);
+        },
+    });
+}
 </script>
 
 <template>
@@ -16,27 +29,38 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
                     class="flex flex-wrap items-center mb-6 text-sm font-medium text-whitesm:mb-0 text-white"
                 >
                     <li>
-                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                        <Link
+                            href="#"
+                            @click="scrole('distance')"
+                            class="mr-4 hover:underline md:mr-6"
+                        >
                             {{ __("header_x_footer.distance") }}</Link
                         >
                     </li>
-                    <li>
+                    <!-- <li>
                         <Link href="" class="mr-4 hover:underline md:mr-6">
                             {{ __("header_x_footer.results") }}</Link
                         >
-                    </li>
+                    </li> -->
                     <!-- <li>
                         <Link href="" class="mr-4 hover:underline md:mr-6">
                             {{ __("header_x_footer.race_organizers") }}</Link
                         >
                     </li> -->
                     <li>
-                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                        <Link
+                            href="#"
+                            @click="scrole('participants')"
+                            class="mr-4 hover:underline md:mr-6"
+                        >
                             {{ __("header_x_footer.participants") }}</Link
                         >
                     </li>
                     <li>
-                        <Link href="" class="mr-4 hover:underline md:mr-6">
+                        <Link
+                            href="/about"
+                            class="mr-4 hover:underline md:mr-6"
+                        >
                             {{ __("header_x_footer.about") }}</Link
                         >
                     </li>
