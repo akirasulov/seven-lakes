@@ -142,9 +142,6 @@ const submit = () => {
     form.post(route("form.store"), {
         onSuccess: () => {
             form.reset();
-            setTimeout(() => {
-                window.location.href = "/";
-            }, 5000);
         },
     });
 };

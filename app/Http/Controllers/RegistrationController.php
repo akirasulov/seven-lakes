@@ -12,20 +12,21 @@ class RegistrationController extends Controller
     {
 
         $request->validate([
-            'name' => 'required|string|max:255',
-            'surname' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:',
-            'msisdn' => 'required|max:20|min:9|unique:',
-            'sex' => 'required|string',
-            'emergency_contact' => 'required|max:20|min:9',
+            'name' => 'required',
+            'surname' => 'required',
+            'email' => 'required',
+            'msisdn' => 'required',
+            'sex' => 'required',
+            'emergency_contact' => 'required',
         ]);
 
         try {
-            Registration::create($request->post());
+            $registration = Registration::create($request->post());
+            $num = 'Ваш нагрудной номер 0' . $registration->id;
         } catch (\Throwable $th) {
-            return back()->with('error', '');
+            return back()->with('error', $th);
         }
 
-        return back()->with('success', '');
+        return back()->with('success', $num);
     }
 }

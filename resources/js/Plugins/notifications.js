@@ -7,7 +7,10 @@ export const notifications = () => {
     router.on("finish", () => {
         const notification = usePage().props.flash;
         if (notification.type) {
-            toast(notification.body, { type: notification.type });
+            toast(notification.body, {
+                type: notification.type,
+                timeout: 15000,
+            });
         }
     });
 };

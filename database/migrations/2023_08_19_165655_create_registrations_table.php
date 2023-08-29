@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('surname');
-            $table->string('email')->unique();
-            $table->string('msisdn')->unique();
+            $table->string('email');
+            $table->string('msisdn');
             $table->string('sex');
             $table->string('emergency_contact');
             $table->timestamps();
