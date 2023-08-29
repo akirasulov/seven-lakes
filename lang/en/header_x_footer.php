@@ -8,4 +8,5 @@ return [
     'participants' => 'Participants',
     'about' => 'About',
     'description' => 'Seven Lakes Mountain Half Marathon',
+    'qr_description' => 'Point your camera',
 ];

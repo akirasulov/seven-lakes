@@ -155,7 +155,7 @@
                                 class="flex flex-col bg-white justify-center items-center rounded-md"
                             >
                                 <p class="text-xs mb-2 font-semibold">
-                                    Наведите камеру
+                                    {{ __("header_x_footer.qr_description") }}
                                 </p>
                                 <svg
                                     shape-rendering="crispEdges"

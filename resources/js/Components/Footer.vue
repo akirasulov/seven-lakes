@@ -70,7 +70,9 @@ function scrole(href) {
                 <div
                     class="flex flex-col bg-white justify-center items-center p-2 rounded-md"
                 >
-                    <p class="text-xs mb-2 font-semibold">Наведите камеру</p>
+                    <p class="text-xs mb-2 font-semibold">
+                        {{ __("header_x_footer.qr_description") }}
+                    </p>
                     <svg
                         shape-rendering="crispEdges"
                         viewBox="0 0 29 29"

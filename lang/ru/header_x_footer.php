@@ -8,4 +8,5 @@ return [
     'participants' => 'Участникам',
     'about' => 'О нас',
     'description' => 'Горный Полумарафон 7 Озёр',
+    'qr_description' => 'Наведите камеру',
 ];
