@@ -9,7 +9,7 @@
             <div
                 class="mx-auto mt-10 flex justify-center max-w-lg items-center gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none"
             >
-                <a href="https://www.tcell.tj/" target="_blank">
+                <!-- <a href="https://www.tcell.tj/" target="_blank">
                     <img
                         class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                         src="../../img/tcell.svg"
@@ -17,7 +17,7 @@
                         width="158"
                         height="48"
                     />
-                </a>
+                </a> -->
                 <a href="https://avrang.tj/" target="_blank">
                     <img
                         class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"

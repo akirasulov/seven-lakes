@@ -11,7 +11,7 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
 
-const countdownDate = new Date("2023-09-03T00:00:00Z");
+const countdownDate = new Date("2023-09-02T08:00:00Z");
 const currentTime = ref(new Date());
 function padZero(num) {
     if (num < 10) {
