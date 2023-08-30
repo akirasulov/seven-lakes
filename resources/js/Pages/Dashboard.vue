@@ -43,7 +43,7 @@ watch(
         </template>
 
         <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="w-full mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div v-if="$page.props.auth.admin">
                         <div class="py-4 bg-white rounded-lg">
@@ -77,90 +77,113 @@ watch(
                                 />
                             </div>
                         </div>
-
-                        <table class="w-full text-sm text-left text-gray-500">
-                            <thead
-                                class="text-xs text-gray-700 uppercase bg-gray-50"
+                        <div class="relative overflow-x-auto">
+                            <table
+                                class="w-full text-sm text-left text-gray-500"
                             >
-                                <tr>
-                                    <th scope="col" class="px-6 py-3">Имя</th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Фамилия
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">Почта</th>
-                                    <th scope="col" class="px-6 py-3">Номер</th>
-                                    <th scope="col" class="px-6 py-3">Пол</th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Экстренный контакт
-                                    </th>
-
-                                    <th scope="col" class="px-6 py-3">
-                                        Номер участника
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Дата регистрации
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr
-                                    v-for="(item, index) in registration.data"
-                                    :key="index"
-                                    class="border-b hover:bg-gray-50"
+                                <thead
+                                    class="text-xs text-gray-700 uppercase bg-gray-50"
                                 >
-                                    <th
-                                        scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        {{ item.name }}
-                                    </th>
-                                    <td
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        {{ item.surname }}
-                                    </td>
-                                    <td
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        {{ item.email }}
-                                    </td>
-                                    <td
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        {{ item.msisdn }}
-                                    </td>
-                                    <td
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        {{ item.sex == "male" ? "муж" : "жен" }}
-                                    </td>
-                                    <td
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        {{ item.emergency_contact }}
-                                    </td>
-                                    <td
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        0{{ item.id }}
-                                    </td>
-                                    <td
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                                    >
-                                        {{ item.created_at }}
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p
-                            v-if="registration.data.length < 1"
-                            class="text-center py-2"
-                        >
-                            Ничего не найдено
-                        </p>
-                        <Pagination class="py-2" :links="registration.links" />
-                    </div>
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3">
+                                            Имя
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Фамилия
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Почта
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Номер
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Пол
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Экстренный контакт
+                                        </th>
 
+                                        <th scope="col" class="px-6 py-3">
+                                            Номер участника
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Дата регистрации
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        v-for="(
+                                            item, index
+                                        ) in registration.data"
+                                        :key="index"
+                                        class="border-b hover:bg-gray-50"
+                                    >
+                                        <th
+                                            scope="row"
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{ item.name }}
+                                        </th>
+                                        <td
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{ item.surname }}
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{ item.email }}
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{ item.msisdn }}
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{
+                                                item.sex == "male"
+                                                    ? "муж"
+                                                    : "жен"
+                                            }}
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{ item.emergency_contact }}
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{
+                                                item.id > 99
+                                                    ? item.id
+                                                    : `0${item.id}`
+                                            }}
+                                        </td>
+                                        <td
+                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                        >
+                                            {{ item.created_at }}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p
+                                v-if="registration.data.length < 1"
+                                class="text-center py-2"
+                            >
+                                Ничего не найдено
+                            </p>
+                            <Pagination
+                                class="py-2"
+                                :links="registration.links"
+                            />
+                        </div>
+                    </div>
                     <div v-else class="p-6 text-gray-900">
                         {{ __("dashboard.welcome") }}
                     </div>
