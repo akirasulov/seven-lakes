@@ -1,5 +1,5 @@
 <template>
-    <Head title="Заявка" />
+    <Head :title="__('form.registration')" />
     <div class="isolate bg-white px-6 py-14 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
             <h2

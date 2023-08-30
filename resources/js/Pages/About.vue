@@ -1,4 +1,5 @@
 <template>
+    <Head :title="__('header_x_footer.about')" />
     <div class="py-16 bg-white">
         <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
             <div

@@ -6,7 +6,7 @@ import Partners from "@/Components/Partners.vue";
 import Stepper from "@/Components/Stepper.vue";
 </script>
 <template>
-    <Head title="Главная" />
+    <Head :title="__('hero.main')" />
     <Hero class="relative" />
     <NewsLetter id="distance" />
     <Stepper />
