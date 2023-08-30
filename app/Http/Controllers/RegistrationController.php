@@ -22,7 +22,7 @@ class RegistrationController extends Controller
 
         try {
             $registration = Registration::create($request->post());
-            $num = 'Ваш нагрудной номер 0' . $registration->id;
+            $num = $registration->id > 99 ? 'Ваш номер' . $registration->id : 'Ваш номер 0' . $registration->id;
         } catch (\Throwable $th) {
             return back()->with('error', $th);
         }

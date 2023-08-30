@@ -17,4 +17,6 @@ return [
     'sex_female' => 'Woman',
     'log_in' => 'Log In',
     'remember' => 'Remember me',
+    'warning' => 'Warning',
+    'warning_description' => 'When receiving a room, the fee is 120 somoni. The proceeds will be used to treat children with autism.',
 ];
