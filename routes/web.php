@@ -44,8 +44,10 @@ Route::get('/form', [FormController::class, 'index'])->name('form.show');
 //         'phpVersion' => PHP_VERSION,
 //     ]);
 // });
-
-Route::get('/dashboard', DashboardIndexController::class)->middleware(['auth', 'verified'])->name('dashboard');
+Route::group(['middleware' => ['auth', 'verified']], function () {
+    Route::get('/dashboard', [DashboardIndexController::class, 'index'])->name('dashboard');
+    Route::delete('/participant/{participant}', [DashboardIndexController::class, 'delete'])->name('participant.delete');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

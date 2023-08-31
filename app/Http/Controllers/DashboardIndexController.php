@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Request;
 
 class DashboardIndexController extends Controller
 {
-    public function __invoke()
+    public function index()
     {
         return inertia()->render('Dashboard', [
             'registration' => Registration::query()
@@ -24,5 +24,15 @@ class DashboardIndexController extends Controller
                 })->paginate(10),
             'filters' => Request::only(['search']),
         ]);
+    }
+
+    public function delete(Registration $participant)
+    {
+        try {
+            $participant->delete();
+        } catch (\Throwable $th) {
+            return back()->with('error', 'Error');
+        }
+        return back()->with('success', 'Успешно удалено!');
     }
 }
