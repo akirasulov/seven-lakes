@@ -20,6 +20,7 @@
                 >
                     <a
                         href="/reglament.pdf"
+                        download
                         class="relative mt-8 flex items-center gap-x-4 hover:bg-slate-50 transition-colors duration-100 p-4 rounded-md cursor-pointer"
                     >
                         <img
@@ -40,7 +41,7 @@
                         </div>
                     </a>
                 </article>
-                <article
+                <!-- <article
                     class="flex max-w-xl flex-col items-start justify-between"
                 >
                     <a
@@ -89,12 +90,13 @@
                             </p>
                         </div>
                     </a>
-                </article>
+                </article> -->
                 <article
                     class="flex max-w-xl flex-col items-start justify-between"
                 >
                     <a
-                        href="/reglament.pdf"
+                        href="/receipt.pdf"
+                        download
                         class="relative mt-8 flex items-center gap-x-4 hover:bg-slate-50 transition-colors duration-100 p-4 rounded-md cursor-pointer"
                     >
                         <img
