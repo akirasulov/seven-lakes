@@ -7,7 +7,7 @@
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
 
-        <section class="pt-60">
+        <!-- <section class="pt-60">
             <div class="mx-auto max-w-2xl">
                 <div class="text-center">
                     <h1
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
 </template>
 
