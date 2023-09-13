@@ -11,7 +11,7 @@
             <div class="mx-auto max-w-6xl">
                 <div class="text-center">
                     <h1
-                        class="text-4xl font-bold tracking-tight text-white sm:text-4xl"
+                        class="text-xl font-bold tracking-tight text-white sm:text-4xl"
                     >
                         <!-- <Countdown /> -->
                         {{ __("hero.description") }}
