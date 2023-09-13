@@ -2,7 +2,7 @@
     <div
         class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32"
     >
-        <section class="px-10">
+        <section class="sm:px-10">
             <swiper
                 :breakpoints="swiperOption.breakpoints"
                 :pagination="{
@@ -96,17 +96,17 @@ let modules = [Autoplay, Navigation, Pagination];
 let swiperOption = {
     breakpoints: {
         320: {
-            slidesPerView: 1,
+            slidesPerView: 1.3,
             spaceBetween: 20,
         },
 
         796: {
-            slidesPerView: 1,
+            slidesPerView: 1.8,
             spaceBetween: 30,
         },
 
         1229: {
-            slidesPerView: 3,
+            slidesPerView: 3.2,
             spaceBetween: 50,
         },
     },
