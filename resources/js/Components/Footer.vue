@@ -133,7 +133,7 @@ function scrole(href) {
                         <span class="sr-only">WhatsApp</span>
                     </a>
                     <a
-                        href="mailto:lakes.marathon.tj@gmail.com"
+                        href="mailto:7lakes.marathon.tj@gmail.com"
                         class="inline-flex transition duration-300 leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600/80 h-12 w-12 items-center justify-center !rounded-lg border border-gray-100 bg-white !shadow-sm hover:opacity-60"
                     >
                         <EnvelopeIcon class="h-6 w-6 text-blue-500" />
