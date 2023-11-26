@@ -7,7 +7,7 @@
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
 
-        <section class="pt-96">
+        <section class="pt-56">
             <div class="mx-auto max-w-6xl">
                 <div class="text-center">
                     <h1
@@ -15,7 +15,7 @@
                     >
                         <Countdown />
                     </h1>
-                    <p class="mt-6 text-lg leading-8 text-white">
+                    <p class="mt-6 text-base md:text-lg leading-8 text-white">
                         {{ __("hero.description") }}
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">

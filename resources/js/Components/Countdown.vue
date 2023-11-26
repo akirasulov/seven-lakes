@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <p>{{ __("countdown.start") }}:</p>
+    <div class="flex flex-col justify-center space-y-2">
+        <p class="text-4xl">{{ __("countdown.start") }}:</p>
         <p>
             {{ days }} {{ __("countdown.days") }}, {{ hours }}:{{ minutes }}:{{
                 seconds
