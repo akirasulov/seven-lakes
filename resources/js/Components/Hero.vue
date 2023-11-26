@@ -13,12 +13,11 @@
                     <h1
                         class="text-xl font-bold tracking-tight text-white sm:text-4xl"
                     >
-                        <!-- <Countdown /> -->
-                        {{ __("hero.description") }}
+                        <Countdown />
                     </h1>
-                    <!-- <p class="mt-6 text-lg leading-8 text-white">
+                    <p class="mt-6 text-lg leading-8 text-white">
                         {{ __("hero.description") }}
-                    </p> -->
+                    </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <Link
                             href="/form"

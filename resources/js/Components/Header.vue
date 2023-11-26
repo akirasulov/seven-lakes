@@ -40,13 +40,13 @@
                 >
                     {{ __("header_x_footer.results") }}</Link
                 > -->
-                <!-- <Link
+                <Link
                     href="#"
                     @click="scrole('partners')"
                     class="text-sm leading-6 text-white uppercase font-bold"
                 >
                     {{ __("header_x_footer.race_organizers") }}</Link
-                > -->
+                >
                 <Link
                     href="#"
                     @click="scrole('participants')"
@@ -77,12 +77,6 @@
                 >
                     {{ __("hero.participate") }}</Link
                 >
-                <!-- <Link
-                            href="/form"
-                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        >
-                            {{ __("hero.participate") }}</Link
-                        > -->
                 <SwitchLang />
             </div>
         </nav>

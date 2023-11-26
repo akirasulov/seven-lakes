@@ -55,30 +55,6 @@
                         src="../../img/2023/7.jpg"
                     />
                 </swiper-slide>
-                <!-- <swiper-slide class="h-screen">
-                    <img
-                        class="w-full h-screen object-contain rounded-md"
-                        src="../../img/2023/8.jpg"
-                    />
-                </swiper-slide>
-                <swiper-slide class="h-screen">
-                    <img
-                        class="w-full h-screen object-contain rounded-md"
-                        src="../../img/2023/9.jpg"
-                    />
-                </swiper-slide>
-                <swiper-slide class="h-screen">
-                    <img
-                        class="w-full h-screen object-contain rounded-md"
-                        src="../../img/2023/10.jpg"
-                    />
-                </swiper-slide>
-                <swiper-slide class="h-screen">
-                    <img
-                        class="w-full h-screen object-contain rounded-md"
-                        src="../../img/2023/11.jpg"
-                    />
-                </swiper-slide> -->
             </swiper>
         </section>
     </div>
