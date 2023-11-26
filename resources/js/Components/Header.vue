@@ -34,12 +34,6 @@
                 >
                     {{ __("header_x_footer.distance") }}</Link
                 >
-                <!-- <Link
-                    href="/results"
-                    class="text-sm leading-6 text-white uppercase font-bold"
-                >
-                    {{ __("header_x_footer.results") }}</Link
-                > -->
                 <Link
                     href="#"
                     @click="scrole('partners')"
