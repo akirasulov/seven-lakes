@@ -17,52 +17,51 @@ function scrole(href) {
 </script>
 
 <template>
-    <footer class="bg-gray-900 shadow">
+    <footer class="bg-gray-900 shadow py-4">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <div class="mb-4">
-                    <ul
-                        class="flex flex-wrap justify-center sm:justify-start items-start mb-6 text-sm font-medium text-white sm:mb-0"
-                    >
-                        <li>
-                            <Link
-                                href="#"
-                                @click="scrole('distance')"
-                                class="mr-4 hover:underline md:mr-6 font-bold"
-                            >
-                                {{ __("header_x_footer.distance") }}</Link
-                            >
-                        </li>
-                        <li>
-                            <Link
-                                href="#"
-                                @click="scrole('partners')"
-                                class="mr-4 hover:underline md:mr-6 font-bold"
-                            >
-                                {{
-                                    __("header_x_footer.race_organizers")
-                                }}</Link
-                            >
-                        </li>
-                        <li>
-                            <Link
-                                href="#"
-                                @click="scrole('participants')"
-                                class="mr-4 hover:underline md:mr-6 font-bold"
-                            >
-                                {{ __("header_x_footer.participants") }}</Link
-                            >
-                        </li>
-                        <li>
-                            <Link
-                                href="/about"
-                                class="mr-4 hover:underline md:mr-6 font-bold"
-                            >
-                                {{ __("header_x_footer.about") }}</Link
-                            >
-                        </li>
-                    </ul>
-                </div>
+            <div
+                class="sm:flex justify-center sm:items-center md:justify-between mb-4"
+            >
+                <ul
+                    class="flex flex-wrap justify-center sm:justify-start items-start mb-6 text-sm font-medium text-white sm:mb-0"
+                >
+                    <li>
+                        <Link
+                            href="#"
+                            @click="scrole('distance')"
+                            class="mr-4 hover:underline md:mr-6 font-bold"
+                        >
+                            {{ __("header_x_footer.distance") }}</Link
+                        >
+                    </li>
+                    <li>
+                        <Link
+                            href="#"
+                            @click="scrole('partners')"
+                            class="mr-4 hover:underline md:mr-6 font-bold"
+                        >
+                            {{ __("header_x_footer.race_organizers") }}</Link
+                        >
+                    </li>
+                    <li>
+                        <Link
+                            href="#"
+                            @click="scrole('participants')"
+                            class="mr-4 hover:underline md:mr-6 font-bold"
+                        >
+                            {{ __("header_x_footer.participants") }}</Link
+                        >
+                    </li>
+                    <li>
+                        <Link
+                            href="/about"
+                            class="mr-4 hover:underline md:mr-6 font-bold"
+                        >
+                            {{ __("header_x_footer.about") }}</Link
+                        >
+                    </li>
+                </ul>
+
                 <div class="hidden md:flex justify-end">
                     <div
                         class="flex flex-col bg-white justify-center items-center p-3 rounded-md"
@@ -87,10 +86,10 @@ function scrole(href) {
 
             <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
             <section
-                class="flex flex-wrap-reverse justify-center sm:justify-between items-center"
+                class="flex flex-wrap-reverse gap-x-8 justify-center sm:justify-between items-center"
             >
                 <div class="flex items-center">
-                    <Link href="/">
+                    <Link class="hidden sm:block" href="/">
                         <ApplicationLogo class="h-14 mr-3" />
                     </Link>
                     <span
