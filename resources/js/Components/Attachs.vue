@@ -25,7 +25,7 @@
                     >
                         <img
                             :src="fileImg"
-                            alt=""
+                            :alt="__('newsletter.header')"
                             class="h-10 w-10 bg-gray-50"
                         />
                         <div class="text-sm leading-6">
@@ -101,7 +101,7 @@
                     >
                         <img
                             :src="fileImg"
-                            alt=""
+                            :alt="__('newsletter.header')"
                             class="h-10 w-10 bg-gray-50"
                         />
                         <div class="text-sm leading-6">

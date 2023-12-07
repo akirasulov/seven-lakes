@@ -17,42 +17,49 @@
                     <img
                         class="w-full h-full object-contain rounded-md"
                         src="../../img/2023/1.jpg"
+                        :alt="__('newsletter.header')"
                     />
                 </swiper-slide>
                 <swiper-slide class="h-screen">
                     <img
                         class="w-full h-full object-contain rounded-md"
                         src="../../img/2023/2.jpg"
+                        :alt="__('newsletter.header')"
                     />
                 </swiper-slide>
                 <swiper-slide class="h-screen">
                     <img
                         class="w-full h-full object-contain rounded-md"
                         src="../../img/2023/3.jpg"
+                        :alt="__('newsletter.header')"
                     />
                 </swiper-slide>
                 <swiper-slide class="h-screen">
                     <img
                         class="w-full h-full object-contain rounded-md"
                         src="../../img/2023/4.jpg"
+                        :alt="__('newsletter.header')"
                     />
                 </swiper-slide>
                 <swiper-slide class="h-screen">
                     <img
                         class="w-full h-full object-contain rounded-md"
                         src="../../img/2023/5.jpg"
+                        :alt="__('newsletter.header')"
                     />
                 </swiper-slide>
                 <swiper-slide class="h-screen">
                     <img
                         class="w-full h-full object-contain rounded-md"
                         src="../../img/2023/6.jpg"
+                        :alt="__('newsletter.header')"
                     />
                 </swiper-slide>
                 <swiper-slide class="h-screen">
                     <img
                         class="w-full h-full object-contain rounded-md"
                         src="../../img/2023/7.jpg"
+                        :alt="__('newsletter.header')"
                     />
                 </swiper-slide>
             </swiper>

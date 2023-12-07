@@ -131,7 +131,7 @@
             <img
                 class="bg-containt md:w-[60%] h-90 rounded-md"
                 src="../../img//route.png"
-                alt=""
+                :alt="__('newsletter.header')"
             />
         </div>
         <div

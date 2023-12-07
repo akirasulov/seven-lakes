@@ -2,7 +2,7 @@
     <div class="relative h-screen isolate px-6 pt-14 lg:px-8">
         <img
             :src="hero"
-            alt="hero image"
+            :alt="__('newsletter.header')"
             loading="lazy"
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />

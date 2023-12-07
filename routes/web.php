@@ -5,7 +5,6 @@ use App\Http\Controllers\FormController;
 use App\Http\Controllers\LanguageStoreController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegistrationController;
-use App\Http\Controllers\ResultController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -28,7 +27,7 @@ Route::get('/about', function () {
     return Inertia::render('About');
 });
 
-Route::get('/results', [ResultController::class, 'index'])->name('index');
+// Route::get('/results', [ResultController::class, 'index'])->name('index');
 
 Route::post('/language', LanguageStoreController::class)->name('language.store');
 

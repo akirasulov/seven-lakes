@@ -36,82 +36,64 @@
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/1.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/2.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/3.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/4.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/5.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/6.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/7.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/8.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                             <swiper-slide>
                                 <img
                                     class="rounded-md h-72 md:h-full object-cover"
                                     src="../../img/track/9.jpg"
-                                    alt="image"
+                                    alt="7 Главных Целей Пенджикентского Горного Полумарафона"
                                     loading="lazy"
-                                    width=""
-                                    height=""
                             /></swiper-slide>
                         </swiper>
                     </div>
