@@ -7,7 +7,7 @@
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
 
-        <section class="pt-56">
+        <section class="h-screen flex items-center">
             <div class="mx-auto max-w-6xl">
                 <div class="text-center">
                     <h1
