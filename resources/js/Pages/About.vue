@@ -1,5 +1,13 @@
 <template>
-    <Head :title="__('header_x_footer.about')" />
+    <Head>
+        <title>{{ __("header_x_footer.about") }}</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" :content="__('header_x_footer.about')" />
+        <meta property="og:url" content="https://seven-lakes.tj/about/" />
+        <meta property="og:image" content="https://seven-lakes.tj/logo.png" />
+        <meta property="og:description" :content="__('about.description')" />
+    </Head>
+
     <section class="bg-white">
         <div class="py-16">
             <div class="container m-auto px-6 md:px-12 xl:px-6 overflow-hidden">

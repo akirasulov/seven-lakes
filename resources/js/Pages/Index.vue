@@ -8,7 +8,14 @@ import Stepper from "@/Components/Stepper.vue";
 import Settlement from "@/Components/Settlement.vue";
 </script>
 <template>
-    <Head :title="__('hero.main')" />
+    <Head>
+        <title>{{ __("hero.main") }}</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" :content="__('newsletter.header')" />
+        <meta property="og:url" content="https://seven-lakes.tj/" />
+        <meta property="og:image" content="https://seven-lakes.tj/logo.png" />
+        <meta property="og:description" :content="__('hero.description')" />
+    </Head>
     <Hero class="relative" />
     <Slider class="relative" />
     <NewsLetter id="distance" />
