@@ -12,7 +12,7 @@
     <meta property="og:image" content="https://seven-lakes.tj/logo.png" />
     <meta property="og:description" :content="__('hero.description')" />
     {{-- Open Graph --}}
-    <title inertia>{{ config('app.name', 'Laravel') }}</title>
+    <title inertia>{{ config('app.name', __('newsletter.header')) }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
