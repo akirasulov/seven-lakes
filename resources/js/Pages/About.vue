@@ -2,7 +2,7 @@
     <Head :title="__('header_x_footer.about')" />
     <section class="bg-white">
         <div class="py-16">
-            <div class="container m-auto px-6 md:px-12 xl:px-6">
+            <div class="container m-auto px-6 md:px-12 xl:px-6 overflow-hidden">
                 <div
                     class="space-y-6 md:space-y-0 md:flex md:flex-row-reverse md:gap-6 lg:items-center lg:gap-12"
                 >
